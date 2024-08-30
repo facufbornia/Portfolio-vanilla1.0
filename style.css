@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    background-color: #0F2961;
+    margin: 0;
+    color: white;
+}
+                        /* Aviso de actualización */
+dialog{
+    position: fixed;
+    text-align: center;
+    top: 25%;
+    margin: 0 22%;
+    padding: 60px;
+    background-color: #fff;
+    border: solid #111 4px;
+    border-radius: 12px;
+    box-shadow: 10px 10px 20px 10px #111;
+    z-index: 2;
+}
+
+dialog h1, dialog p, dialog button, dialog a{
+    color: #000;
+    font-weight: bold;
+    background-color: #fff;
+}
+
+dialog button{
+    margin: 20px;
+    font-size: 20px;
+    background-color: #fff;
+    width: 120px;
+    height: 40px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px 2px #0008ff;
+}
+
+#background-dialog{
+    background-color: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.hide{
+    display: none;
+}
+
+                    /* Comienza Portfolio Vanilla */
+html{
+    scroll-behavior: smooth;
+}
+body{
+    width: 80vw;
+    margin: 0 10%;
+}
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+#menu{
+    position: sticky; /* nav se mueve al scrollear*/
+    top: 0; /* hasta llegar al final del header, siempre arriba*/
+    opacity: 0.8;     
+}
+#menu:hover{
+    opacity: 1;
+}
+
+nav ul{
+    display: flex; /* sería como "mostrar flexibles los elementos" lo debo usar en la
+                etiqueta general que contiene la etiq a aplicarle la propiedad*/
+    justify-content: flex-end; /*al display flex se le puede sumar align-items center*/
+    background-color: #678FE6;
+    max-height: 45px;
+}
+.nav-img-uy{
+    width: 28px;
+    float: left;
+    padding: 12px 12px 12px 10%;
+    background-color: #678FE6;
+
+}
+.nav-img-us{
+    width: 30px;
+    float: left;
+    padding: 12px 12px 10px 0;
+    background-color: #678FE6;
+}
+
+li{
+    list-style: none; /* Saco las viñetas de las listas*/
+    margin-right: 20px;
+    background-color: #678FE6;
+    padding: 10px 10px 10px 0;
+}
+
+a{ 
+    text-decoration: none;
+    color: white;
+    background-color: #678FE6;
+}
+li a:hover{
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+#name{
+    text-align: center;
+    margin-top: 200px;
+    color: white;
+}
+
+h1{
+    font-size: 3.4em;
+    margin: 0; /* Todos los elementos traen un margen por defecto */
+}
+h2{
+    font-size: 2.8em;
+}
+h3{
+    font-size: 1.8em;
+}
+p{
+    font-size: 1.1em;
+}
+
+h4{
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+.conoceme{
+    padding: 10px 10px 10px 10px;
+    box-shadow: 2px 2px 6px rgb(2, 110, 233);
+    border-radius: 2em;
+}
+.conoceme:hover{
+    font-size: 1.2em;
+    font-weight: bold;
+}
+header{
+    background-image: url(img/header.png);
+    height: 100vh;
+    background-size: cover;
+    background-position: center center;
+}
+#eng-btn{
+    display: none;
+}
+
+
+/* -----ABOUT ME--------*/
+section{
+    text-align: center;
+    margin-top: 20px;
+}
+.descripcion{
+    display: flex;
+    justify-content: space-around;
+}
+#sobremi{
+    margin-bottom: 20px;
+    font-size: 2.8em;
+}
+.descripcion img{
+    margin-top: 10%;
+    height: 40%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.textme{
+    width: 60%;
+    margin-top: 40px;
+    padding-right: 14%;
+    box-sizing: border-box;
+}
+.textme p{
+    margin-bottom: 10px;
+}
+
+/*  --------EDUCACIÓN-------- */
+#educacion{
+    margin: 40px 0 20px 0;
+    font-size: 2.8em;
+}
+.contenedor-edu{
+    display: flex;
+    flex-wrap: wrap;/* Determina el contenido del flex, cuantos elementos habran por fila*/
+    padding: 0 30px;
+}
+
+.contenedor-edu h3{
+    margin: 0 0 6px 0;
+}
+
+.js,.introd,.python{
+    width: 28%;
+    padding: 6px;
+    margin-left: 12px;
+    box-shadow: 2px 2px 6px rgb(2, 110, 233);
+}
+
+.jap,.webd,.ingles{
+    width: 28%;  /* El padding suma como width*/
+    padding: 6px;
+    margin-left: 12px;
+    box-shadow: 2px 2px 8px rgba(48, 138, 241, 1);
+}
+
+.edu img{
+    height: 60px;
+    max-width: 120px; 
+    margin-top: 10px;
+    float: right;
+}
+.terminado{
+    margin-bottom: 20px;
+    border: #678FE6 solid;
+    border-radius: 10px;
+    background: #678FE6; /* Porque lo aplica solo a la imagen?*/
+}
+
+.terminado h3,.terminado p,.terminado img{
+    background: #678FE6;
+}
+
+.cursando{
+    margin-bottom: 20px;
+    border: #1f49a5 solid;
+    border-radius: 10px;
+    background: #1f49a5; /* Porque lo aplica solo a la imagen?*/
+}
+
+.cursando h3,.cursando p,.cursando img{
+    background: #1f49a5;
+}
+
+
+/* ------EXPERIENCIA------ */
+
+#experiencia img{
+    width: 15%;
+    height: 15%;
+    float: left;
+    justify-content: center;
+    text-align: center;
+    padding-left: 80px;
+    padding-top: 20px;
+}
+#jsimg{
+    margin-top: 20px;
+}
+#experiencia .container{
+    text-align: center;
+    padding: 20px 0;
+    height: 40vh;
+}
+
+/* ----- CONTACTO ------*/
+
+.cont img{
+    text-align: center;
+    width: 6em;
+    height: auto;
+    cursor: pointer;
+}
+.cont{
+    padding: 5% 4%;
+    float: left;
+
+}
+div.un{
+    margin-left: 15%;
+}
+.cont a{
+    background-color: #0F2961;
+}
+#contact{
+    width: 100%;
+    display: inline;
+    
+}
+#MCresp{
+    display: none;
+}
+
+/* Agregar evento para que agrande las imagenes  */
+/* Al hacer clic en el correo aparezca mi direccion email */
+/* Cuando achico la pagina quiero que js y phyton se separen juntos */
+/* Hacer que el header tambien tenga aplicado container */
